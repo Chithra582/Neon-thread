@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color-scheme: dark;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom subtle neon loom thread glow */
+.thread-glow-cyan {
+  filter: drop-shadow(0 0 6px rgba(6, 182, 212, 0.45));
+}
+
+.thread-glow-emerald {
+  filter: drop-shadow(0 0 6px rgba(16, 185, 129, 0.45));
+}
+
+.thread-glow-purple {
+  filter: drop-shadow(0 0 6px rgba(168, 85, 247, 0.45));
+}
+
+.thread-glow-amber {
+  filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.45));
+}
+
+/* Subtle grid texture */
+.cyber-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.loom-scanline {
+  background: linear-gradient(180deg, transparent 0%, rgba(6, 182, 212, 0.04) 50%, transparent 100%);
+}

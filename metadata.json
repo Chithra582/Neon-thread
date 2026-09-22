@@ -1,0 +1,7 @@
+{
+  "name": "Neon Thread – Project Loom",
+  "description": "An AI-powered project ecosystem connecting student talent with employer challenges, mentor-guided sprints, verified portfolio evidence, and interview opportunities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
