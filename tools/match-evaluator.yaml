@@ -1,0 +1,22 @@
+name: match-evaluator
+description: Calculate the alignment score between candidate skills and challenge requirements.
+input_schema:
+  type: object
+  properties:
+    candidate_id:
+      type: string
+      description: Unique identifier for the student or candidate.
+    candidate_skills:
+      type: array
+      items:
+        type: string
+      description: List of verified candidate skills with proficiency ratings.
+    required_skills:
+      type: array
+      items:
+        type: string
+      description: Mandatory technical skills for the challenge.
+  required:
+    - candidate_id
+    - candidate_skills
+    - required_skills

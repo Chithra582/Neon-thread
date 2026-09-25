@@ -1,0 +1,63 @@
+spec_version: "0.1.0"
+name: "neon-thread-agent"
+version: "1.0.0"
+description: >
+  Autonomous proof-based talent matching and recruitment intelligence agent.
+  Connects student developers with industry challenges, verifies repository portfolio
+  evidence, conducts sprint milestone evaluations, and generates objective hiring match explanations.
+author: "Chithra R"
+license: "MIT"
+
+model:
+  preferred: "gemini-2.0-flash"
+  fallback:
+    - "gpt-4o"
+    - "claude-3-5-sonnet"
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+
+skills:
+  - talent-challenge-matcher
+  - portfolio-evidence-verifier
+  - sprint-milestone-evaluator
+  - skill-gap-analyzer
+
+tools:
+  - match-evaluator
+  - evidence-auditor
+  - milestone-tracker
+  - gap-analyzer
+
+runtime:
+  max_turns: 10
+  temperature: 0.2
+  timeout: 120
+
+compliance:
+  risk_tier: standard
+  frameworks:
+    - eeoc
+    - gdpr
+  data_governance:
+    pii_handling: redact
+    data_classification: internal
+  recordkeeping:
+    audit_logging: true
+    log_format: structured_json
+  supervision:
+    human_in_the_loop: conditional
+    override_capability: true
+    kill_switch: true
+
+tags:
+  - hr-and-recruiting
+  - talent-matching
+  - portfolio-verification
+  - proof-based-hiring
+  - gemini
+  - skills-intelligence
+
+metadata:
+  domain: "hr-and-recruiting"
+  category: "HR & recruiting"

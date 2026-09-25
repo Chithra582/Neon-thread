@@ -1,0 +1,16 @@
+name: gap-analyzer
+description: Analyze skill deficits and return recommended sprint projects to bridge gaps.
+input_schema:
+  type: object
+  properties:
+    missing_skills:
+      type: array
+      items:
+        type: string
+      description: List of skills required but not yet verified.
+    target_role:
+      type: string
+      description: Desired career track (e.g., AI Engineer, Full-Stack Developer).
+  required:
+    - missing_skills
+    - target_role

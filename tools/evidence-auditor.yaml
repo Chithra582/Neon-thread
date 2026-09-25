@@ -1,0 +1,14 @@
+name: evidence-auditor
+description: Audit code repository evidence to verify claimed competencies.
+input_schema:
+  type: object
+  properties:
+    repository_url:
+      type: string
+      description: Public GitHub or GitLab URL of the candidate project.
+    target_skill:
+      type: string
+      description: Specific language or framework being verified.
+  required:
+    - repository_url
+    - target_skill
